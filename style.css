@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Patrick+Hand&family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    /* font-family: 'Roboto', sans-serif; */
+    box-sizing: border-box;
+}
+
+*:root {
+    --baseColor: #9000ff;
+    /* --baseColor: #ff9320; */
+    /* --baseColor: #b820ff; */
+    /* --baseColor: #ff2020; */
+    /* --baseColor: #fbff00; */
+}
+
+*::selection {
+    background-color: var(--baseColor);
+}
+
+body {
+    background-color: #161616;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    padding: 0 30px;
+    background-color: #000;
+}
+
+p.logo {
+    /* font-weight: 300; */
+    font-family: 'Cookie', cursive;
+    font-size: 47px;
+    color: white;
+    text-shadow: 0 0 10px var(--baseColor);
+}
+
+ul li {
+    list-style: none;
+    display: inline;
+    margin: 0 30px;
+}
+
+.color {
+    color: var(--baseColor);
+    font-size: 18px;
+}
+
+ul li a {
+    color: var(--baseColor);
+    text-shadow: 0 0 10px var(--baseColor);
+    transition: 0.4s;
+    text-decoration: none;
+}
+
+ul li a:hover {
+    color: #fff;
+    text-shadow: 0 0 10px white;
+}
+
+ul li a.active {
+    color: #fff;
+}
+
+.container {
+    /* margin: auto; */
+    text-align: center;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: calc(100vh - 9vh);
+}
+
+.boxCommon {
+    padding: 30px;
+
+}
+
+.title {
+    margin: 30px 0;
+}
+
+.content {
+    margin: 60px 0;
+    color: #fff;
+}
+
+.commonA {
+    text-decoration: none;
+    color: #fff;
+    border: 2px solid var(--baseColor);
+    border-radius: 50px;
+    margin: 0 30px;
+    padding: 5px 15px;
+    box-shadow: 0 0 5px var(--baseColor);
+}
+
+.headingRe {
+    color: white;
+}
+
+.special {
+    transition: 0.4s;
+}
+
+.special:hover {
+    background-color: var(--baseColor);
+    color: #fff;
+    box-shadow: 0 0 10px var(--baseColor), 0 0 20px var(--baseColor);
+}
+
+.textImages h2 {
+    font-family: 'Patrick Hand', cursive;
+    color: white;
+    font-size: 33px;
+}
+
+.textImages h2 span {
+    color: var(--baseColor);
+    font-family: 'Patrick Hand', cursive;
+}
+
+.imageBox {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 100px 0;
+    gap: 2rem;
+    height: 60vh;
+    overflow-y: scroll;
+}
+
+.imageBox img {
+    width: 100%;
+    height: auto;
+}
+
+
+@media only screen and (max-width: 1273px) {
+
+    nav {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 9vh;
+        padding: 0 30px;
+        background-color: #000;
+    }
+
+    .container {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    ul li {
+        display: none;
+    }
+
+    .boxCommon {
+        padding: 30px;
+
+    }
+}
+
+
+@media only screen and (max-width: 636px){
+    
+    p.logo
+    {
+        font-size: 30px;
+    }
+    .btnLinks {
+        display: grid;
+        gap: 1.2rem;
+    }
+    .headingRe
+    {
+        /* color: white; */
+        font-size: 30px;
+    }
+    .content{
+        font-size: 12px;
+    }
+}
